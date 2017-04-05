@@ -1,16 +1,16 @@
 apply plugin: 'com.android.application'
 
-buildscript {
-    repositories {
-        maven {
-            url uri('../repo')
-        }
-    }
-    dependencies {
-        classpath 'com.xyzlf.plugin:pluginlib:1.0.0'
-    }
-}
-apply plugin: 'xyzlf.plugin.time'
+//buildscript {
+//    repositories {
+//        maven {
+//            url uri('../repo')
+//        }
+//    }
+//    dependencies {
+//        classpath 'com.xyzlf.plugin:pluginlib:1.0.0'
+//    }
+//}
+//apply plugin: 'xyzlf.plugin.time'
 
 android {
     compileSdkVersion 25
