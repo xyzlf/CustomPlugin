@@ -3,7 +3,15 @@
 
 # Gradle
 
-	compile 'com.xyzlf.plugin:time:0.0.1'
+	buildscript {
+        repositories {
+            jcenter()
+        }
+        dependencies {
+            classpath 'com.xyzlf.plugin:pluginlib:1.0.0'
+        }
+    }
+    apply plugin: 'xyzlf.plugin.time'
 
 
 # 如何自定义Gradle Plugin
