@@ -14,11 +14,17 @@ group='com.xyzlf.plugin'
 version='1.0.0'
 
 uploadArchives {
+    //使用当前目录下面的maven仓库，仓库在当前目录的repo文件目录中
     repositories {
         mavenDeployer {
             repository(url: uri('../repo'))
         }
     }
+//
+//    //使用本电脑的默认mavenLocal仓库，在~/.m2目录中
+//    repositories {
+//        mavenLocal()
+//    }
 }
 
 Properties properties = new Properties()
