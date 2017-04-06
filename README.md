@@ -8,7 +8,7 @@
             jcenter()
         }
         dependencies {
-            classpath 'com.xyzlf.plugin:pluginlib:1.0.0'
+            classpath 'com.xyzlf.plugin:time:0.0.1'
         }
     }
     apply plugin: 'xyzlf.plugin.time'
