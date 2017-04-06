@@ -1,6 +1,6 @@
 apply plugin: 'groovy'
 apply plugin: 'maven'
-apply plugin: 'com.novoda.bintray-release'//添加
+apply plugin: 'com.novoda.bintray-release'//添加上传到jcenter仓库用到的插件
 
 dependencies {
     compile gradleApi()
@@ -27,6 +27,9 @@ uploadArchives {
 //    }
 }
 
+
+
+//------------------------------ 以下是上传到jcenter仓库的代码 ------------------------------//
 Properties properties = new Properties()
 properties.load(project.rootProject.file('local.properties').newDataInputStream())
 
